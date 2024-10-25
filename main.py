@@ -56,9 +56,17 @@ vocab = {
     # "": "",
 }
 
-while(True):
-    d, d_ans = random.choice(list(vocab.items()))
-    print(d)
-    ans = input("> ")
-    if ans != d_ans:
-        print("WRONG    -   " + d_ans)
+keys = list(vocab.keys())
+
+while (True):
+    random.shuffle(keys)
+    for d in keys:
+        d_ans = vocab[d]
+
+        while (True):
+            print(d)
+            ans = input("> ")
+            if ans != d_ans:
+                print("WRONG    -   " + d_ans)
+            else:
+                break
