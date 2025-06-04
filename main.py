@@ -19,6 +19,16 @@ vocab = {
     "お父さん": "おとうさん",
     "貸す": "かす",
     "娘": "むすめ",
+    "工学": "こうがく",
+    "専攻": "せんこう",
+    "文法": "ぶんぽう",
+    "毎日": "まいにち",
+    "時": "じ",
+    "起きます": "おきます",
+    "富士山": "ふじさん",
+    "登る": "のぼる",
+    "度": "ど",
+    "回": "かい",
     "Kanji: 山": "さんやま",
     "Kanji: 川": "せんかわ",
     "Kanji: 田": "でんた",
@@ -35,8 +45,10 @@ vocab = {
     "Kanji: 八": "はちやっつ",
     "Kanji: 九": "きゅうここの",
     "Kanji: 十": "じゅうとお",
-    # "": "",
-    # "": "",
+    "Kanji: 用": "ようもちいる",
+    "Kanji: 男": "だんおとこ",
+    "Kanji: 輝": "きかがや",
+    "Kanji: 只": "しただ",
     # "": "",
     # "": "",
     # "": "",
@@ -68,12 +80,12 @@ vocab = {
 
 keys = list(vocab.keys())
 
-while (True):
-    random.shuffle(keys)
+while True:
+    # random.shuffle(keys)
     for d in keys:
         d_ans = vocab[d]
 
-        while (True):
+        while True:
             print(d)
             ans = input("> ")
             if ans != d_ans:
