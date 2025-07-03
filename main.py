@@ -29,6 +29,7 @@ vocab = {
     "登る": "のぼる",
     "度": "ど",
     "回": "かい",
+    "紅茶": "こうちゃ",
     "Kanji: 山": "さんやま",
     "Kanji: 川": "せんかわ",
     "Kanji: 田": "でんた",
@@ -49,6 +50,7 @@ vocab = {
     "Kanji: 男": "だんおとこ",
     "Kanji: 輝": "きかがや",
     "Kanji: 只": "しただ",
+    "Kanji: 枚": "まい"
     # "": "",
     # "": "",
     # "": "",
@@ -81,7 +83,7 @@ vocab = {
 keys = list(vocab.keys())
 
 while True:
-    # random.shuffle(keys)
+    random.shuffle(keys)
     for d in keys:
         d_ans = vocab[d]
 
